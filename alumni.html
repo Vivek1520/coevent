@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/alumni.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+    <title>alumni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <!-- ------------------------ -->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../fonts/icomoon/style.css">
+
+  <link href="../your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <style>
+    
+header{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+.navbar{
+  padding:20px 0;
+  
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  color: white;
+
+  font-weight: 700;
+  
+}
+
+.nav-item{
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  background:#114694;
+  color: #fff;
+  
+} 
+.navbar-light .navbar-nav .nav-item .nav-link{
+  color: #4682b4;
+  padding:5px 15px;
+
+}
+.navbar-toggler{
+  border: none;
+  color: #fff;
+  border:2px solid #fff;
+  border-radius: 10px;
+  outline:none;
+  
+}
+a.navbar-brand:hover{
+  color: #fff;
+}
+.navbar>.container-fluid{
+  margin: 0px 30px 0px 30px;
+}
+
+@media screen and (max-width: 768px) { 
+.navbar-collapse{
+ background: #fff;  
+}   
+}
+@media screen and (max-width: 995px) {
+
+ .navbar-collapse{
+  background: 	#fff;
+}   
+}
+@media screen and (max-width: 1279px) {
+.nav-item{background:#89cff0;
+  color: #fff;}
+
+}
+/* ---------------------------coro-------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,#alum-sect{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#alum-sect{
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  /* -webkit-box-align: center; */
+      /* -ms-flex-align: center; */
+          /* align-items: center;
+  -webkit-box-pack: center; */
+      /* -ms-flex-pack: center; */
+          justify-content: center;
+  padding: 30px 10px;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-transition: background .4s ease-in;
+  transition: background .4s ease-in;
+  height: 100vh;
+  margin-top: 89px;
+ 
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+.alumini-card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+  cursor: pointer;
+}
+
+.alumini-container {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .alumini-container{
+    max-height: 300px;
+  }
+  #alum-sect{
+    height: 50vh;
+  }
+  .background--custom{
+    display: none;
+  }
+  body{
+    background-color: #eec0c6;
+background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+  }
+  
+}
+
+.alumini-cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.alumini-card img {
+   width: 106%;
+    height: 70%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#item-1:checked ~ .alumini-cards #song-3, #item-2:checked ~ .alumini-cards #song-1, #item-3:checked ~ .alumini-cards #song-2 {
+  -webkit-transform: translatex(-40%) scale(0.8);
+          transform: translatex(-40%) scale(0.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .alumini-cards #song-2, #item-2:checked ~ .alumini-cards #song-3, #item-3:checked ~ .alumini-cards #song-1 {
+  -webkit-transform: translatex(40%) scale(0.8);
+          transform: translatex(40%) scale(0.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .alumini-cards #song-1, #item-2:checked ~ .alumini-cards #song-2, #item-3:checked ~ .alumini-cards #song-3 {
+  -webkit-transform: translatex(0) scale(1);
+          transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#item-1:checked ~ .alumini-cards #song-1 img, #item-2:checked ~ .alumini-cards #song-2 img, #item-3:checked ~ .alumini-cards #song-3 img {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+          box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+#item-2:checked ~ .player #test {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+/*# sourceMappingURL=carouselstyle1.css.map */
+
+/*---------------------teams----------------*/
+ /* ------------core yeam heading css---------- */
+  
+  
+ #core-team-h1{
+  font-family: sans-serif;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 40px;
+  max-width: 600px;
+  position:relative;
+  
+  }
+ 
+  #core-team-h1:after{
+  content: "";
+  display:block;
+  width: 120px;
+  height:5px;
+  background: rgb(37, 38, 77);
+  position: absolute;
+  
+  right: 40%;
+  top: 110%;
+  z-index: -2;
+  }
+
+/* ----------------------------------------------------------- */
+#core-team-h1{
+  font-family: sans-serif;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 40px;
+  max-width: inherit;
+  position:relative;
+  display: flex;
+justify-content: center;
+margin: 11px 0px 26px 0px;
+margin-top:-50px;
+
+  
+  }
+ 
+  #core-team-h1:after{
+  content: "";
+  display:block;
+  width: 120px;
+  height:5px;
+  background: rgb(37, 38, 77);
+  position: absolute;
+  
+  right: 40%;
+  top: 110%;
+  z-index: -2;
+  }
+
+.team-box{
+  /* width: 1200px; */
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  /* margin: 0 auto; */
+  padding: 24px;
+  justify-content: space-around;
+  margin-bottom: 42px !important;
+}
+.card-struct{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-card{
+  position: relative;
+  width: 222px;
+    height: 324px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+  
+  margin: 0px auto 30px auto;
+
+}
+.team-card:before,
+.team-card:after
+{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.5s;
+  z-index:-1;
+}
+.team-card:hover:before{
+transform: rotate(20deg);
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.team-card:hover:after{
+transform: rotate(10deg);
+box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.team-card .team-imgBx{
+position: absolute;
+top: 10px;
+left: 10px;
+bottom: 10px;
+right: 10px;
+background: #222;
+transition: 0.5s;
+z-index: 1;
+}
+
+.team-card:hover .team-imgBx
+{
+  bottom: 80px;
+}
+
+.team-card .team-imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card .team-details{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+.team-card .team-details h2{
+ margin: 0;
+ padding: 0;
+ font-weight: 600;
+ font-size: 20px;
+ color: #777;
+ text-transform: uppercase;
+} 
+
+.team-card .team-details h2 span{
+font-weight: 500;
+font-size: 16px;
+color: #f38695;
+display: block;
+margin-top: 5px;
+ } 
+
+ .team-details a{
+   text-decoration: none;
+   color: black;
+ }
+/*----------pocoloco gradient-----------*/
+path {
+  transform-origin: 50% 0%;
+}
+.background--custom {
+  background-color: #42B3F5;
+  position: fixed;
+  width: 100vw;
+  height: 250%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@keyframes path0 {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes path1 {
+  0% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+@keyframes path2 {
+  0% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+
+
+
+/* ----------------------------------------- */
+  </style>
+
+  </head>
+<body>
+
+  
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg fixed-top" id="nav-bar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="../img/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+                    ISA-RAIT
+                    
+                  </a>
+                  
+                  <div class=" navbar-light" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ms-lg-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        
+    </header>
+
+    <section id="alum-sect">
+
+
+      <div class="alumini-container">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+        <div class="alumini-cards">
+          <label class="alumini-card" for="item-1" id="song-1">
+            <img src="./img/PPPA.jpeg" alt="song">
+          </label>
+          <label class="alumini-card" for="item-2" id="song-2">
+            <img src="./img/alum-2.jpg" alt="song">
+          </label>
+          <label class="alumini-card" for="item-3" id="song-3">
+            <img src="./img/alum-3.jpg" alt="song">
+          </label>
+          <label class="alumini-card" for="item-3" id="song-3">
+            <img src="./img/mag1.jpg" alt="song">
+          </label>
+          
+        </div>
+      </div>
+      </section>
+    <section>
+      <!--pocoloco-->
+      <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path0 5s linear infinite alternate;" /><path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path1 12.5s linear infinite alternate;" /><path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 20L-100 20Z" style="animation: path2 30s linear infinite alternate;" />
+      </svg>
+    </section>
+    <!-- ------------TEAM HTML CODE------------------------------------------ -->
+
+   
+   <!-- MEET THE TEAM HEADING--------------- -->
+   <div id="heading-box">
+    <div class="core-team-heading" data-aos="fade-up">
+       <h1 id="core-team-h1">Core team 2020-2021</h1>
+      </div>
+   </div>
+
+
+  <!-- MEET THE TEAM END--------------- -->
+<!-- -----TEAM CARDS------------------------------------------ -->
+<div id="team-div">
+
+
+<div class="team-box">
+<!-- ------------- -->
+<div class="card-struct">
+<div class="team-card">
+ <div class="team-imgBx">
+   <img
+     src="../img/TreasurerTanmayKadam.jpeg"
+     alt="images">
+ </div>
+
+ <div class="team-details">
+   <h2><a href="linkedin.com/in/tanmay-kadam-bb5b9718a">Tanmay Kadam</a><br><span>Treasurer</span></h2>
+ </div>
+</div>
+
+
+</div>
+
+<!-- ----------------------- -->
+
+<div class="card-struct">
+<div class="team-card">
+ <div class="team-imgBx">
+   <img
+     src="./img/AnishDhamankar.jpeg"
+     alt="images">
+ </div>
+ <div class="team-details">
+   <h2><a href="https://www.linkedin.com/in/anishdhamankar/">Anish Dhamankar</a><br><span>Vice President</span></h2>
+ </div>
+</div>
+
+
+</div>
+
+
+<div class="card-struct">
+<div class="team-card">
+ <div class="team-imgBx">
+   <img
+     src="./img/PresidentSumedhioshi.jpg"
+     alt="images">
+ </div>
+ <div class="team-details">
+   <h2><a href="linkedin.com/in/sumedhjoshi36">Sumedh Joshi</a><br><span>President</span></h2>
+ </div>
+</div>
+
+
+</div>
+
+<div class="card-struct">
+<div class="team-card">
+ <div class="team-imgBx">
+   <img
+     src="./img/GeneralSecretaryChhayaSahu.jpg"
+     alt="images">
+ </div>
+ <div class="team-details">
+   <h2><a href="linkedin.com/in/chhaya-sahu-4618011aa">Chhaya Sahu</a><br><span>General Secretary</span></h2>
+ </div>
+</div>
+
+
+</div>
+
+<div class="card-struct">
+<div class="team-card">
+ <div class="team-imgBx">
+   <img
+     src="./img/CEOPratikJadhav.png"
+     alt="images">
+ </div>
+ <div class="team-details">
+   <h2><a href="linkedin.com/in/pratik-jadhav-bba544190">Pratik Jadhav</a><br><span>Chief Event Organiser</span></h2>
+ </div>
+
+</div>
+
+</div>
+
+</div>
+
+         <!-- MEET THE TEAM HEADING--------------- -->
+         <div id="heading-box">
+          <div class="core-team-heading" data-aos="fade-up">
+             <h1 id="core-team-h1">Core team 2019-2020</h1>
+            </div>
+         </div>
+
+
+          <!-- MEET THE TEAM END--------------- -->
+ <!-- -----TEAM CARDS------------------------------------------ -->
+ <div id="team-div">
+
+
+   <div class="team-box">
+     <!-- ------------- -->
+     <div class="card-struct">
+       <div class="team-card">
+         <div class="team-imgBx">
+           <img
+             src="../img/ex core 2019/Nikhil Yadav.jpg"
+             alt="images">
+         </div>
+
+         <div class="team-details">
+           <h2>Nikhil Yadav<br><span>Treasurer</span></h2>
+         </div>
+       </div>
+
+       
+     </div>
+
+     <!-- ----------------------- -->
+
+     <div class="card-struct">
+       <div class="team-card">
+         <div class="team-imgBx">
+           <img
+             src="../img/ex core 2019/Vrushali Shoor.jpg"
+             alt="images">
+         </div>
+         <div class="team-details">
+           <h2>Vrushali Shoor<br><span>Vice President</span></h2>
+         </div>
+       </div>
+
+       
+     </div>
+
+
+     <div class="card-struct">
+       <div class="team-card">
+         <div class="team-imgBx">
+           <img
+             src="../img/ex core 2019/president.png"
+             alt="images">
+         </div>
+         <div class="team-details">
+           <h2>Siddhant Warde<br><span>President</span></h2>
+         </div>
+       </div>
+
+       
+     </div>
+
+     <div class="card-struct">
+       <div class="team-card">
+         <div class="team-imgBx">
+           <img
+             src="../img/ex core 2019/Kaustubh Bhogle.jpg"
+             alt="images">
+         </div>
+         <div class="team-details">
+           <h2>Kaustubh Bhogle<br><span>General Secretary</span></h2>
+         </div>
+       </div>
+
+       
+     </div>
+
+     <div class="card-struct">
+       <div class="team-card">
+         <div class="team-imgBx">
+           <img
+             src="../img/ex core 2019/Treasurer (Tanmay Kadam)1.jpeg"
+             alt="images">
+         </div>
+         <div class="team-details">
+           <h2>Tanmay Kadam<br><span>Chief Event Organiser</span></h2>
+         </div>
+
+       </div>
+       
+     </div>
+
+   </div>
+
+
+  
+
+    <!-- -------------------------foooter html--------------------------------- -->
+    <a class="gotopbtn" id="gotobtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+
+
+
+    <div class="content d-flex align-items-center bg-light">
+      <!-- <h2 class="w-100 text-center">Footer #1</h2> -->
+    </div>
+  
+    <footer class="footer-20192" id="foot">
+      <div class="site-section">
+        <div class="container">
+  
+          <div class="cta d-block d-md-flex align-items-center px-5">
+            <div>
+              <h2 class="mb-0">Join us on an exciting journey</h2>
+              <h3 class="text-dark">Let's get started!</h3>
+            </div>
+            <div class="ml-auto">
+              <a href="https://forms.gle/nrh1qUqwBmhfDbNh6" target="_blank" class="btn btn-dark rounded-0 py-3 px-5">Join us</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <h3>Follow us</h3>
+              <ul class="list-unstyled social">
+                <li><a href="https://www.instagram.com/isa_rait/" target="_blank"><span class="icon-instagram"></span></a></li>
+              <li><a href="https://www.facebook.com/isa.rait.543" target="_blank"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://twitter.com/rait_isa" target="_blank"><span class="icon-twitter"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/isa-rait-student-chapter-3a99451b6" target="_blank"><span class="icon-linkedin"></span></a></li>
+                
+              </ul>
+            </div>
+  
+            <div class="col-sm">
+              <a href="#" class="footer-logo">ISA RAIT</a>
+              <p class="copyright">
+                The ISA committee is an exceptional as well as a resourceful team that handles all the tasks assigned, as
+                expected, in a disciplined manner.
+              </p>
+            </div>
+  
+         
+            <div class="col-sm">
+              <a href="index.html">
+              <img src="../img/footer logo.png" class="align-top img-fluid" style="width:50%;height:auto; overflow:visible;"
+                alt="footer">
+              </a>
+  
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+  
+  
+      <div>
+  
+        <p class="copy">&copy Copyright <strong>ISA RAIT 2021</strong>. All Rights Reserved <br>
+          Website designed by <a href="https://www.linkedin.com/in/sairaj-yadav/
+          " target="_blank">Sairaj Yadav</a>, <a href="https://www.linkedin.com/in/vedant-vaity/" target="_blank">Vedant Vaity</a>, <a
+            href="https://www.linkedin.com/in/saurabhsawant2001/" target="_blank">Saurabh Sawant</a>, <a href="https://www.linkedin.com/in/krutik-chogale-901478150/" target="_blank">Krutik Chogale</a> and <br><a href="http://">Reshikesh
+            Deshmukh</a>.</p>
+  
+  
+      </div>
+    </footer>
+<!-- -------footer ends--------------------------------------   -->
+
+
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+                document.getElementById("nav-bar").style.background = "#000000d9";
+            } else {
+
+                document.getElementById("nav-bar").style.background = "none";
+            }
+        }
+    </script>
+    
+
+    
+        
+      
+      
+        
+        
+      
+      <!--------------bootstrap---------->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+        <!-----------------pocoloco gradient---------->
+        <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+        <script>
+          var gradient = new Gradient();
+          gradient.initGradient("#canvas");
+          </script>
+    
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
